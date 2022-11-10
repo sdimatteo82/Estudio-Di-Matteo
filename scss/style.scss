@@ -1,0 +1,49 @@
+@import "global";
+@import "movimiento";
+@import "navbar";
+@import "portadas";
+
+.hero-text {
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-nosotros {
+  text-align: center;
+  position: relative;
+}
+
+.footer-sm {
+  color: white;
+  padding-bottom: 0px;
+  text-align: center;
+
+  a {
+    color: white;
+    margin-left: 6px;
+    text-align: center;
+    i {
+      font-size: 15px;
+    }
+  }
+}
+.text {
+  color: white;
+}
+.contacto {
+  font-size: 60px;
+  padding: 20px;
+}
+article img {
+  border-radius: 16px;
+  height: 150px;
+  transition: height 1s;
+
+  &:hover {
+    height: 170px;
+  }
+}

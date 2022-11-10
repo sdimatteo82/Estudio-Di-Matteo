@@ -1,9 +1,23 @@
 * {
   margin: 0;
-  padding: 0%;
+  padding: 0;
   box-sizing: border-box;
 }
-header {
+
+body,
+html {
+  background-color: black;
+}
+
+@keyframes movimiento {
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: top right;
+  }
+}
+nav {
   background-color: white;
   position: absolute;
   width: 100%;
@@ -14,118 +28,67 @@ header {
   align-items: center;
   z-index: 2;
 }
-body {
-  background-color: black;
+
+.container-portada {
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/foto\ wtc.jpg);
+  background-size: 150%;
+  animation: movimiento 20s infinite alternate;
 }
 
-.wtc_imge {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 740px;
+.container-nosotros {
   width: 100%;
-  max-width: 100%;
+  height: 400px;
+  background-image: url(../img/noche.jpg.jpg);
+  background-size: 150%;
+  animation: movimiento 20s infinite alternate;
 }
-.logo {
-  margin-left: 20px;
-  color: black;
-  width: 70px;
-  height: 64px;
-  z-index: 1;
+
+.hero-text {
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.container {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1320px;
+
+.text-nosotros {
+  text-align: center;
+  position: relative;
+}
+
+.footer-sm {
+  color: white;
+  padding-bottom: 0px;
+  text-align: center;
+}
+.footer-sm a {
+  color: white;
+  margin-left: 6px;
+  text-align: center;
+}
+.footer-sm a i {
+  font-size: 15px;
+}
+
+.text {
+  color: white;
 }
 
 .contacto {
   font-size: 60px;
   padding: 20px;
 }
-footer {
-  background-color: black;
-}
-
-.footer-sm {
-  color: white;
-  padding-bottom: 0px;
-}
-.footer-sm a {
-  color: white;
-  margin-left: 6px;
-}
-.footer-sm a i {
-  font-size: 15px;
-}
-.footer-sm_icons {
-  text-align: center;
-}
-section {
-  display: grid;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
-  padding: 100px;
-}
-
-article {
-  display: flex;
-  flex-direction: row;
-  gap: 32px;
-  padding: 20px;
-  align-items: center;
-}
 
 article img {
   border-radius: 16px;
-}
-img {
   height: 150px;
   transition: height 1s;
 }
-img:hover {
+article img:hover {
   height: 170px;
 }
 
-.text {
-  color: white;
-}
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-.animated-text {
-  animation-duration: 5s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-.section {
-  position: relative;
-  width: 100%;
-  height: 550px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-@media (max-width: 768px) {
-  article {
-    display: grid;
-  }
-}
+/*# sourceMappingURL=style.css.map */
