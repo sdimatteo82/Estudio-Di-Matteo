@@ -91,4 +91,13 @@ article img:hover {
   height: 170px;
 }
 
+section {
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+}
+section input {
+  margin: 7px;
+}
+
 /*# sourceMappingURL=style.css.map */
